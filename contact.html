@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT</title>
+
+    <!-- Link css et icon -->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" type="image/x-icon" href="images/logo1.png">
+
+    <!-- CDN font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <!-- menu -->
+    <div class="container-menu navContainer">
+        <div class="menu">
+
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <!-- logo -->
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo1.png" alt="logo">
+                </a>
+            </div>
+
+            <!-- menu -->
+            <div class="menu-links">
+                <ul>
+                    <li >
+                        <a href="index.html">Acceuil</a>
+                    </li>
+
+                    <li>
+                        <a href="apropos.html" >Apropos</a>
+                    </li>
+
+                    <li>
+                        <a href="article1.html" >Article 1</a>
+                    </li>
+
+                    <li>
+                        <a href="article2.html" >Article 2</a>
+                    </li>
+
+                    <li>
+                        <a href="article3.html" >Article 3</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="active">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Titre -->
+    <div class="titre-section">
+        <h3>Contact</h3>
+        <span></span>
+    </div>
+    
+    <!-- CONTACT -->
+    <div class="container-contact1">
+        <!-- Création d'un formulaire -->
+        <marquee behavior="" direction="rtl">
+            <h3 id="contact-marque">Vous Pouver Inscrire à Partir de Ce Formulaire suivant!!!</h3>
+        </marquee>
+        <form id="creatAccount" action="index.php" method="post" enctype="multipart/form-data">
+
+            <!-- Prénom -->
+            <label for="prenom">Prénom</label>
+            <input type="text" id="prenom" name="prenom" placeholder="Entrer votre Prénom" required>
+
+            <!-- Nom -->
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" name="nom" placeholder="Entrer votre Nom" required>
+
+            <!-- Date de naissance -->
+            <label for="dateNaissance">Date de naissance</label>
+            <input type="date" id="dateNaissance" name="dateNaissance" placeholder="Entrer votre Date de naissance" required>
+
+            <!-- Email -->
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Entrer votre email" required>
+
+            <!-- password=Mot de passe -->
+            <label for="password">Mot de passe</label>
+            <input type="password" id="password" name="password" placeholder="Entrer votre Mot de passe" required>
+
+            <!-- Photo -->
+            <label for="Photo">Photo</label>
+            <input type="file" id="Photo" name="Photo" placeholder="Entrer votre Photo" required>
+
+            <!-- pays -->
+            <label for="pays">Pays</label>
+            <select name="pays" id="pays">
+                <option value="Sénégale">Sénégale</option>
+                <option value="Canada">Canada</option>
+                <option value="Germany">Germany</option>
+            </select>
+
+            <!-- Diplome -->
+            <fieldset>
+                <legend>Choisissez vos diplomes</legend>
+
+                <input type="checkbox" id="licence" name="artmatial" value="licence">
+                <label for="licence">Licence</label><br>
+
+                <input type="checkbox" id="master" name="artmatial" value="master">
+                <label for="master">Master</label><br>
+
+                <input type="checkbox" id="doctorat" name="artmatial" value="doctorat">
+                <label for="doctorat">Doctorat</label><br>
+            </fieldset>
+
+            <input type="submit" value="Crée le compte">
+            <input type="reset" value="Annuler">
+        </form>
+    </div>
+
+    <!-- Section Footer -->
+    <div class="footer">
+        <div class="container-footer">
+            <!-- Icon Sociaux -->
+            <div class="footer1">
+                <h3>Notre <span>Bloc</span></h3>
+                <p class="text-footer1">
+                    Transfomer vos idées en solutions technologiques innovantes. 
+                </p>
+    
+                <!-- Icon Sociaux -->
+                <div class="content-sociaux">
+                    <div class="icon-social d-inline">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+    
+                    <div class="icon-social d-inline">
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+    
+                    <div class="icon-social d-inline">
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+
+                    <div class="icon-social d-inline">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Liens Utiles -->
+            <div class="footer2">
+                <h3>Liens Utiles</h3>
+                <p>
+                    <a href="#">Services</a>
+                </p>
+                <p>
+                    <a href="#">Politique de confidentialite</a>
+                </p><p>
+                    <a href="#">Politique d'utilisation des cookies</a>
+                </p><p>
+                    <a href="#">Condition générale d'utilisation</a>
+                </p>
+            </div>
+    
+            <!-- Nous Contacter -->
+            <div class="footer3">
+                <h3>Nous Contacter</h3>
+                <p>
+                    <a href="mailto:sarrpro9@gmail.com">
+                        <i class="bi bi-envelope-at"></i>
+                        sarrpro9@gmail.com
+                    </a>
+                </p>
+                <p>
+                    <a href="#">
+                        <i class="bi bi-geo-alt"></i>
+                        Dakar, Sénégal
+                    </a>
+                </p>
+                <p>
+                    <a href="#">
+                        <i class="bi bi-telephone"></i>
+                        +221 78 179 20 58
+                    </a>
+                </p>
+            </div>
+    
+            <!-- Newsletter -->
+            <div class="footer4">
+                <h3>Newsletter</h3>
+                <form action="#" id="newsletter">
+                    <input type="email" required class="form-control" placeholder="Entrer votre email">
+                    <button type="submit" class="btn btn-sinscribe">S'inscrire</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="copyright text-secondary text-center">
+            &copy; Copyright Notre Bloc - 2025 <br>
+            Fait avec <i class="fa-regular fa-heart text-danger"></i> et beaucoup de <i class="fa-solid fa-mug-saucer text-danger"></i> par <i>Sarr 
+            Pro</i>
+        </div>
+    </div>
+</body>
+</html>
